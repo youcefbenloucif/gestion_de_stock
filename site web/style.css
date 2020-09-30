@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav p {
+	font-family:cairo;
+	color: white;
+	font-size:50px;
+	line-height:5px;
+	float-left;
+	padding: 30px 15px;
+}
+nav p a {
+	color: white;
+
+}
+nav ul{
+	float: right;
+	padding: 0px 100px;
+}
+
+nav ul li {
+	float:left;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	font-family:cairo;
+	color: white;
+	font-size:16px;
+	padding: 18px 24px ;
+	text-decoration: none;
+}
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	border-radius: 0px 0px 4px 4px;
+	padding: 18px 24px ;
+}
+nav ul li:hover ul {
+	display: block;
+}
+nav ul li:hover a {
+	color:blue;
+}
+nav ul li ul li{
+	width: 180px;
+	border-radius: 4px;
+	padding: 0px 0px;
+}
+nav ul li ul li a{
+	padding: 7px 14px ;
+}
+nav ul li ul li a:hover {
+	background-color: grey;
+	color: red;
+}
+/*--body--*/
+body {
+
+	background-image: url(img/sada.jpg);
+	background-size: 1370px 630px;
+	background-position: 30% 102%;
+}
+
+nav { 
+	width:100%;
+	height: 60px;
+	background-color:black;
+}
+header p {
+	position:absolute;
+	top: 70px;
+	left: 3%;
+	color:white;
+	font-family:monospace;
+	font-size:53px;
+	border-bottom:solid grey;
+	animation: shadow 3s ease-in-out infinite ;
+
+}
+@keyframes shadow 
+{
+	0%{text-shadow: 25px 5px 3px red}
+	50%{text-shadow: -25px 5px 3px blue}
+	100%{text-shadow: 25px 5px 3px red}
+	
+}
+
+
